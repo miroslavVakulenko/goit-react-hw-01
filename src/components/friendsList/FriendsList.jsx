@@ -1,11 +1,13 @@
 // src = .components/ FriendList.jsx
+import css from "./FriendsList.module.css"
+
 import FriendListItem from "./FriendListItem"
 
 export default function FriendsList({ friendsList }) {
   // console.log(friendsList,"list arr")
   return (<ul>
     {friendsList.map((friend) =>     
-      (<li key={friend.id}>
+    (<li className={css.friendItem} key={friend.id}>
         <FriendListItem friend={friend} />
       </li>)
     )

@@ -6,7 +6,7 @@ export default function FrendItem({friend}) {
   return (
     <div>
       <img src={friend.avatar} alt={friend.name} width="48" />
-  <p>Friend name</p>
+  <p> Friend name</p>
   <p>{friend.isOnline ? "Online" : "Offline"}</p>
 </div>
   )
