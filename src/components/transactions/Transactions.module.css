@@ -1,12 +1,18 @@
 /* th{
   background-color: red;
 } */
-.table{
+.tableTransaction{
+  box-sizing: border-box;
+}
+.tableCells{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 35px;
 }
-.table > th{
+table>tbody {
+  display: table-row-group;
+}
+.tableCells > th{
   margin: auto;
   box-sizing: border-box;
   font-weight: 500;
@@ -17,6 +23,7 @@
 .tableHead{
   background-color: #2a2a2a;
   display: grid;
+  box-sizing: border-box;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 35px;
   font-weight: 600;
@@ -28,6 +35,7 @@
 .tableTransaction{
   width: 550px;
   margin: 0 auto;
+    border-collapse: collapse;
 }
 .tableTransaction tbody tr{
   background-color: white;

@@ -5,7 +5,7 @@ export default function TransactionsHistory({ transactions }) {
   return (
     <table className={css.tableTransaction}>
       <thead>
-        <tr className={`${css.table} ${css.tableHead}`}>
+        <tr className={`${css.tableCells} ${css.tableHead}`}>
         <th>Type</th>
         <th>Amount</th>
         <th>Currency</th>
@@ -14,7 +14,7 @@ export default function TransactionsHistory({ transactions }) {
 
     <tbody>
         {transactions.map((transaction) => (
-          <tr className={css.table} key={transaction.id}>
+          <tr className={css.tableCells} key={transaction.id}>
             <th>{transaction.type}</th>
             <th>{transaction.amount}</th>
             <th>{transaction.currency}</th>
