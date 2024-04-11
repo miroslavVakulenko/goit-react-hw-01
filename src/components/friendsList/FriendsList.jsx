@@ -5,7 +5,7 @@ import FriendListItem from "./FriendListItem"
 
 export default function FriendsList({ friendsList }) {
   // console.log(friendsList,"list arr")
-  return (<ul>
+  return (<ul className={css.friendsList}>
     {friendsList.map((friend) =>     
     (<li className={css.friendItem} key={friend.id}>
         <FriendListItem friend={friend} />
